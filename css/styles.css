@@ -3,6 +3,7 @@ body {
   background-color: #E5E5E5;
   margin: 0;
   font-family: 'PT Mono', monospace;
+  font-size: 20px;
 }
 
 h1, h2{
@@ -24,6 +25,12 @@ h2{
   margin-top: 50px;
 }
 
+.headpic{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
 
 /*~~~~~~~~~~~~~~~~~~~~CONTENT WRAP~~~~~~~~~~~~~~~~*/
 .content-wrap{
@@ -35,13 +42,15 @@ a{
   text-decoration: none;
 }
 
-.content-wrap h2{
+.content-wrap h2, h3{
   text-align: center;
 }
 
 
 
 /*~~~~~~~~~~DROPDOWN MENU~~~~~~~~~~~~~~~~~~*/
+
+
 .btn {
   background-color: #fca311;
   color: black;
@@ -107,10 +116,30 @@ a{
     margin: 0 0.5em;
     color: black;
  }
-.floating-menu a:hover{
+.floating-menu a:hover {
     font-size: 0.9em;
     display: block;
     margin: 0 0.5em;
     color: blue;
     font-weight: bold;
 }
+
+ul{
+  list-style: none;
+  background-color: #fca311;
+  color: black;
+  padding: 16px;
+  font-family: 'PT Mono', monospace;
+  font-size: 16px;
+  border: none;
+  min-width: 140px;
+  text-align: center;
+}
+
+#drop ul {
+  display: none;
+}
+
+/*#drop ul :hover{
+  display: inline;
+}*/
