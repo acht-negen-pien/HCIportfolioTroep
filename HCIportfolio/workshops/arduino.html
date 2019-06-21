@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>Arduino | HCI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono|Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+	<header>
+		<nav class="floating-menu">
+			<a href="../index.html">Home</a>
+			<!-- <a href="">Topics</a>
+			<a href="">Workshops</a>
+			<a href="">Excursion</a>
+			<a href="">Lab weeks</a> -->
+		</nav>	
+		<h1>Arduino</h1>
+	</header>
+	<main>
+		<div class="content-wrap">
+			<h2>What is Arduino?</h2>
+			<p>Arduino is an open source hardware and software company that designs and manufactures kits for building digital devices that can sense and control both physically and digitally. So basically what we did in this workshop was build small circuits with LEDs, buzzers, buttons and motors to make setups that we can code so that they respond how we want them to.</p>
+
+			<h2>Exercises</h2>
+			<p>Note: the codes for each exercise can be found at the bottom of the page.</p>
+			<h3>Exercise 3</h3>
+			<p>After our first introduction to the software, we get started on working with the hardware kit. So far, everything looks familiar. The coding language reminds me of a language we learned last year, called Processing. The first assignment is simple enough: light an LED. The second assignment (this one) required two LEDs to be lit. I struggled a bit at the first try, but then discover that I have to edit the code as well in order to make the whole thing work. I do so and both LEDs light up. I do run into some trouble with the hardware, since I can’t really tell whether one is really flashing twice as fast as the other. However, looking at my code, I think I did well.</p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex3.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+			<h3>Exercise 4</h3>
+			<p>In this exercise, we have to fade the lights. In order to do so, we have to move the pins that we are using. Only certain pins are capable of pulse width modulation, which allows for dimming of the brightness. I move the pins from 12 and 13 to 10 and 9. The assignment asks for a for-loop. I start to panic a little, since I had a lot of trouble with those in the last programming course. Fortunately, they aren’t as scary as I remember and I finish the assignment without too much of a hassle.</p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex4.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 6</h3>
+			<p>For this assignment, we have to make a contraption that allows us to dim the LEDs. I think this is pretty cool, because it is a responsive design that is recognizable from real life. I add the potentiometer to my circuit and edited my code so that now the lights respond to dimming. </p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex6.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 7</h3>
+			<p>This assignment adds LDRs to the loop. LDR stands for Light Dependent Resistance. The more light and LDR catches, the lower its resistance will be. The goal is to build a circuit that dims the light when it’s light out and turn them up when it’s dark.</p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex7.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 8</h3>
+			<p>A voltage divider is a circuit that turns a large voltage into a smaller one. Using two resistors and an input voltage, an output voltage can be created that is a fraction of the input. Two resistors of the same value always have an output voltage of 2,5V, exactly half of the input voltage, which is always 5V in an Arduino board. 
+			This means, when you put two LDRs on an Arduino, they will give the same amount of resistance since they’ll get the same amount of light because they are so close together. The output voltage will be 2,5V. Below is a picture of the calculations:
+			</p>
+
+			<img src="arduino/calcu.jpg" alt="calculations with the voltage divider">
+
+			<p>I then built a circuit with a voltage divider and measured the output voltage. As expected, when both resistors are either in light or darkness, the output voltage is the same: 2,5V. When R1 is covered, the voltage goes up to 5. When R2 is covered, the voltage goes down to nearly zero. Note: the table shows a value of 3V instead of 2,5V, this is because I forgot to turn the float value into an integer.</p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex8.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 9</h3>
+			<p>For this exercise, we made processing communicate with Arduino. We made an input with a potentiometer with Arduino, and then output the potentiometer value into Processing. This variable can now be reached in Processing. I used the potentiometer value to determine the coordinates of a grey bar.</p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex9.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 10</h3>
+			<p>The simplest sensors are buttons. In this exercise, I made a switch for a green LED with two buttons. It started off simple, one button, one LED. But for the last exercise I connected two buttons and wrote a code so that the LED only lights up when only one button is pressed, not both. </p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex10.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 11</h3>
+			<p>The servo motor is a small motor that has a rotating appendage on it. It can turn to a precise position, and it only rotates 180 degrees. For this exercise I wrote a code so that the servo motor does a little movement that resembles the sprinkler dance move. </p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex11.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 12</h3>
+			<p>Besides directly through the code, Servo motors can also be controlled with inputs. For example, with a potentiometer or a set of buttons. In this exercise I used two buttons and made them correspond to one direction each. When pushed, the servo moves its appendage. </p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex12.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h3>Exercise 13</h3>
+			<p>Lastly, you can make your Arduino play simple tunes with the help of a Piezo buzzer. The buzzer consists of two small metal plates that can vibrate at different frequencies, thus producing notes. I made my Arduino play the Indiana Jones theme.</p>
+
+			<video width="450" controls>
+			  <source src="arduino/ex13.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h2>Codes</h2>
+			<p>3C</p>
+			<img src="arduino/3C code.jpg">
+			<p>4C</p>
+			<img src="arduino/4C code.jpg">
+			<p>6C</p>
+			<img src="arduino/6C code.jpg">
+			<p>7</p>
+			<img src="arduino/7 code.jpg">
+			<p>9</p>
+			<img src="arduino/9 code.jpg">
+			<p>10f</p>
+			<img src="arduino/10f code.jpg">
+			<p>11b</p>
+			<img src="arduino/11b code.jpg">
+			<p>12</p>
+			<img src="arduino/12 code.jpg">
+			<p>13</p>
+			<img src="arduino/13 code.jpg">
+
+
+
+			
+
+	</div>
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>

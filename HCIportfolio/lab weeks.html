@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <title>Lab Weeks | HCI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono|Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<header>
+		<nav class="floating-menu">
+			<a href="../index.html">Home</a>
+			<!-- <a href="">Topics</a>
+			<a href="">Workshops</a>
+			<a href="">Excursion</a>
+			<a href="">Lab weeks</a> -->
+		</nav>	
+		<h1>Lab Weeks</h1>
+	</header>
+	<main>
+		<div class="content-wrap">
+			<h2>Logbook</h2>
+			<h3>Day 1</h3>
+			<p>Today we met up with our group and got assigned our topic. My group consists of Paco, Pablo, Mitchel, Seda and myself. Mitchel is not here today, so we will meet him tomorrow. Our topic is Artificial creatures, I’m quite pleased with that. We start off with ideating, what can we do with this? We land on emotions and affective computing as a starting point. We want to use facial expressions as an input for our creature, so maybe it can mirror these expressions. We’re also thinking about incorporating flight somehow, either with wings or in a drone-like shape.</p>
+
+			<p>We get our hands on the Google Vision kit, which has emotion-recognizing software on it. This is very convenient and can be used to our advantage. It can recognize four basic emotions: joy, sorrow, anger, and surprise</p>
+
+
+			<h3>Day 2</h3>
+			<p>We’ve decided to leave concepting for what it is and continue doing testing with Google Vision. Our plan is to make a drone, but for now we're trying to get a car to work for practice. We know how to get small servo motors to work, so we try to get the car running with those. Soon enough we find out that servos aren't powerful enough to power a motor, so we have to incorporate batteries and order a motor shield. For the Google Vision kit, we’ll also need a certain type of HDMI cable so we order that too.</p>
+
+
+			<h3>Day 3</h3>
+			<p>Today the battery shield arrives. We manage to get the wheels of the car turning with Arduino.</p>
+
+			<p>Meanwhile, we’re still trying to figure out what exactly the Google Vision kit can do and how we can make it communicate with our Arduino kit. We’ve also grabbed the Google Voice kit, since we would like to explore the options of voice commands for our creature. Unfortunately, it’s very difficult to work with either kit without a monitor. We’re no sure if it can  be done without, because the information resources on the Google kits are limited. Our HDMI cable hasn’t come in the mail yet, so we can’t link the kits up with a monitor today.</p>
+
+			<p>We establish that making a drone would be too ambitious and settle for a driving creature that can be driven with different facial expressions. </p>
+
+
+			<h3>Day 4</h3>
+			<p>Today, we got the HDMI cable. However, there are no monitors left and nobody in our group has one available that we can use. After a lot of frustrated googling and getting no useful results, we decide to bail on the Google kits and use facial recognition in Processing instead.</p>
+
+			<p>We also sit down to make a clear vision of what we want our end product to be. Our highest priority is still to make something that responds to different facial expressions, so we consider what we can do with that. For now, we want to make something that is kind of abstract, possibly transparent, and has lights.</p>
+
+			<h3>Day 5</h3>
+			<p>Today we started looking into the possibilities with Processing’s open CV. We’ve already used the kit before in class, and we’re looking for facial expression recognition libraries. We decide on a final shape for our project: it will be an abstract, snail-jellyfish type form with one big eye and many tentacle appendages with lights in them.</p> 
+
+			<img src="images/francis sketch.jpg" alt="a sketch of our final product" width="400px">
+
+			<p>Over the weekend, we are going to think about materials we can use and we’re going to get familiar with Processing.</p>
+
+			<h3>Day 6</h3>
+			<p>We’ve decided that we want to make transparent cubes with lights in them at the end of the tentacles. We’re going to do that with resin, so we do some research on what type of resin we use and where we can get it. </p>
+
+			<p>During some tests with Processing, we discover that the facial expression recognition is nowhere near as good as the Google Vision kit’s was. We decide to boot the emotion recognition and just make it respond to faces. The more faces, the more things will happen. We find out that Processing and Arduino are very compatible with one another. We figure out how to make Processing recognize and count the amount of faces it can see, and pass that number onto Arduino. </p>
+
+			<p>We also go on a shopping trip around town to get materials for our creature. We don’t have a concrete plan when we go out, but as we’re going to different shops we get inspired. </p>
+
+			<p>Today we ordered the resin that we will cast with our lamps. Yesterday we got a mesh food cover and a round metal frame with wheels for the base. The tentacles will be made out of transparent tubing and metal wire to keep their shape. We start soldering the LEDs together with long wire so we can start casting the resin tomorrow. The wire for the LEDs will also go in the tubes, all coming together inside the body. </p>
+
+			<p>We make a small test setup of our concept, and the code works so far. </p>
+
+			<h3>Day 7</h3>
+			<p>We soldered the lights together, 18 in total. We thread them through the transparent tubing and test them all out to make sure we don’t have any defective lights. </p>
+
+			<p>We have to come up with a name for our creature. We decide on F.R.A.N.C.I.S., an acronym for Fabulous Rampant Artificial Notable Creature, Intrinsically Superb.</p>
+
+			<p>At the end of the day, we cast the resin blocks in an ice cube tray and put the LEDs inside. This goes a little messy, but it works. We add some glitter and rhinestones to the mixture as well. Now we cross our fingers and hope that the resin has hardened properly in the morning. </p>
+
+			<h3>Day 8</h3>
+			<p>The resin did not harden properly. It’s still sticky on the outside, although it does hold its shape. We frantically try to find a solution for this online. In the end, we land on scraping the sticky outside of and spraying the cubes with clear acrylic lacquer. This works well enough, although the effect varies per cube. Some stay sticky, some get a bit cloudy, but they cure well enough for us to work with. Luckily, all the LEDs work. The effect that this gives is really cool, just like we envisioned it. </p>
+
+			<p>We start assembling the tentacles through the mesh basket and to the metal frame. We ordered a webcam and make a cap for it, so that it looks like an eye. All the pieces are assembled at the end of the day, we just need to straighten out the code. 
+			</p>
+
+			<h3>Day 9</h3>
+			<p>On this last day, we still have ambitions to give Francis the ability to make sound. We’d already given up on any movement, but sound could still work. Since this is not a five person job, Paco and I make a cool poster for our installation. In the end, we weren’t able to add sound at the last minute, so we left him for what he is. He is a very social creature, who gets more excited when there are more people looking at him. His excitement shows in the lights that spout from his tentacles. </p>
+
+			<video width="450" controls>
+			  <source src="images/francis final vid.mp4" type="video/mp4">
+			  <!-- <source src="movie.ogg" type="video/ogg"> -->
+			Your browser does not support the video tag.
+			</video>
+
+			<h2>Reflection</h2>
+			<p>These lab weeks have been tiring, but fun. It was cool to bring all these things we’ve learned over the past couple of weeks to life and to find creative ways to apply them. My topic, artificial creatures, was one of my favorite ones from the lectures. Unfortunately, Arduino was one of the topics that I struggled with most and our project was quite Arduino heavy. However, because we were in a group, the coding was mostly done by three of my group members. Instead, I focused on what our creature would be, what it would look like, and how it was going to be built.</p>
+
+			<p>I like the change of location from school to the Maakhaven. It puts you in a different mindset, with less distractions than there would be in school. I thought the big variety of supplies was very inspiring as well, it encourages to try new things and see how far you can get.</p> 
+
+			<p>When looking back at our final product, you could say that there is not a lot of interaction. If we had know from the beginning exactly what we would be making, we probably could have put some movement or sound in there as well. But trying things and failing is also part of the process, and with that taken into account, two weeks is quite a short amount of time. We had big plans in the beginning, started working them out, and they seemed to be too efficiënt. Iteration is part of the process and I’m pretty proud of the product we put forward regardless. It looked cool and the interaction that it had was enough. We made a poster and a mysterious acronym to add to the storytelling, and that’s part of the experience too.</p>
+
+			<p>One of my group mates, Paco, made a video documenting our process. You can check it out <a href="https://vimeo.com/343652620">here</a>.</p>
+		</div>
+	</main>
+	<footer>
+		
+	</footer>
+</body>
